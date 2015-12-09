@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Christian Belin" />
+  <meta name="description" content="Simple web page for organizing name distribution during a Secret Santa" />
+
+  <!--
+
+    Note: the configuration is exclusively stored in the associated JavaScript file "santa.js"
+
+    Date: 2015-12-09
+    Version: 1.0
+    History:
+      1.0:
+       - first version
+       - reworked text for release
+       - checked it passes W3 validation
+       - added metadata
+       - added comments for release
+
+  -->
+  
+  <title>
+    Secret Santa
+  </title>
+
+  <link rel="stylesheet" type="text/css" href="santa.css" />
+</head>
+
+<body>
+
+  <h1>
+  Secret Santa 2015
+  </h1>
+  
+  <!--
+    There are three boxes (with class="box") here; only one is shown at a time.
+    The first one is the form with the name list, the second one is the name confirmation dialog, and the last one is the match display message.
+    They share the "box" class for styling purposes.
+    The confirmation dialog and display message both contain a "value" span, which is a variable placeholder. It is updated through JavaScript.
+  -->
+
+  <div id="nameChooser" class="box">
+    <p>
+      Choose your name in the list to find your happy match! 
+    </p>
+    
+    <form>
+      <select name="formPart" id="formPart" onchange="showConfirm();">
+        <option value="none">…</option>
+      </select>
+    </form>
+  </div>
+
+  <div id="nameConfirmer" class="box">
+    <p>
+      You chose <span id="confirmValue" class="value"></span>.
+    </p>
+
+    <form>
+      <button type="button" onclick="cancelDialog();">
+        Cancel
+      </button>
+    </form>
+  </div>
+
+  <div id="matchDisplay" class="box">
+    <p>
+      Your match is <span id="matchValue" class="value"></span>.
+    </p>
+
+    <form>
+      <button type="button" onclick="cancelDisplay();">
+        Close
+      </button>
+    </form>
+  </div>
+
+  <!-- Load JavaScript at the end to make sure the rest of the page is loaded, and render started. -->
+  <script src="santa.js"></script>
+
+</body>
+
+</html>

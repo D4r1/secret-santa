@@ -1,0 +1,78 @@
+/*
+
+  Stylesheet for the simple Secret Santa web page
+
+  Author: Christian Belin
+  Date: 2015-12-09
+  Version: 1.0
+  History:
+    1.0:
+     - first version
+     - passes W3 validation
+
+*/
+
+body {
+
+  font-family: "Arial Black", Helvetica, sans-serif;
+  font-size: 16pt;
+
+  background-color: #7A1414;
+  color: #210000;
+
+  margin: 0px;
+  padding: 0px
+}
+
+h1 {
+  text-align: center;
+
+  background-color: #106110;
+  color: #001A00;
+
+  width: 75%;
+  margin: 0px auto;
+  padding: 75px 50px;
+}
+
+.box {
+  text-align: center;
+
+  width: 75%;
+  margin: auto;
+  padding: 160px 50px 50px 50px;
+}
+
+.value {
+  font-weight: bold;
+}
+
+#nameChooser {
+
+}
+
+#nameConfirmer {
+	display: none;
+}
+
+#matchDisplay {
+	display: none;
+}
+
+/* Paletton colors for reference: http://paletton.com/#uid=2000u0kqOficLsgkilx-S93Qk47
+    Main primary color
+    
+    color-primary-0 #7A1414
+    color-primary-1 #E18787
+    color-primary-2 #AB3F3F
+    color-primary-3 #480000
+    color-primary-4 #210000
+
+    Main complement color
+    
+    color-complement-0 #106110
+    color-complement-1 #6CB46C
+    color-complement-2 #328932
+    color-complement-3 #003A00
+    color-complement-4 #001A00
+*/

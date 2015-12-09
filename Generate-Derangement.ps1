@@ -7,14 +7,6 @@ This script generates random permutations until a valid derangement is found. It
 Generate-Derangement.ps1 (1..20)
 .PARAMETER List
 The list for which a derangement must be generated
-.NOTES
-Author: Christian Belin
-Version: 1.0
-Date: 2015-12-09
-History:
-  1.0:
-   - first version
-   - added PowerShell inline help
 #>
 
 ##-[ Parameters ]-##

@@ -2,17 +2,6 @@
 
   Manages the HTML elements allowing users to see which person they are associated to for a Secret Santa [1].
 
-  Author: Christian Belin
-  Date: 2015-12-09
-  Version: 1.0
-  History:
-    1.0:
-     - first version
-     - added full documentation for release
-     - removed names for release
-     - fixed all warnings from http://codebeautify.org/jsvalidate (except the variable declaration in the loop, but we have to)
-     - added a bunch of comments
-
   [1] https://en.wikipedia.org/wiki/Secret_Santa
 
 */
